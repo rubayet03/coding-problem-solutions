@@ -1,0 +1,43 @@
+//header files 
+#include<iostream>
+#include<vector>
+#include<string>
+#include<set>
+#include<map>
+#include<algorithm>
+// macros
+#define endl "\n"
+#define ll long long
+
+using namespace std;
+
+// function's section
+
+int main()
+{
+    //code fast korar ninza technique
+    ios::sync_with_stdio();
+    cin.tie(0);
+    // code starts here
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        ll a,b,c,d;
+        cin >> a>>b>>c>>d;
+        
+        cout << b<<" "<<c<<" "<<c<<endl;
+    }
+    /*
+    Conditions for a valid triangle:
+    x + y > z,
+    y + z > x,
+    x + z > y
+    
+    (x + y > z) in this condition if we take maximum possible values for x and y and minimum possible value for z then this condition will always evaluate true.
+    in this case max_x = b,max_y = c and min_z = c.
+
+    */
+    return 0;
+
+}
