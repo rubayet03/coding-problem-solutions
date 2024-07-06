@@ -1,0 +1,57 @@
+//header files 
+#include<iostream>
+#include<vector>
+#include<string>
+#include<set>
+#include<map>
+#include<algorithm>
+// macros
+#define endl "\n"
+#define ll long long
+
+using namespace std;
+
+// function's section
+
+int main()
+{
+    
+    ios::sync_with_stdio();
+    cin.tie(0);
+    // code starts here
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int a,b,c;
+        cin >> a >> b >> c;
+        if(c%2 == 0)
+        {
+            if(a > b)
+            {
+                cout << "First\n";
+            }
+            else
+            {
+                cout << "Second\n";
+            }
+        }
+        else if(c % 2 != 0)
+        {
+            if(b > a)
+            {
+                cout << "Second\n";
+            }
+            else
+            {
+                cout << "First\n";
+            }
+        }
+    }
+    /*
+    so a player will always try to push the common buttons first to save their own chances of pushing their own buttons
+    after all the common buttons have been pushed, the winner will be whoever has the most buttons to push.
+     */
+
+
+}
